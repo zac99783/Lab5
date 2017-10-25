@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i)
                         {
-                            Toast.makeText(MainActivity.this, "Dialod關閉", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Dialog關閉", Toast.LENGTH_SHORT).show();
                         }
                     });
 
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity
                         }
                     });
 
-                    dialog.setPositiveButton("取消", new DialogInterface.OnClickListener()
+                    dialog.setPositiveButton("顯示List", new DialogInterface.OnClickListener()
                     {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i)
@@ -64,6 +64,8 @@ public class MainActivity extends AppCompatActivity
                             showListDialog();
                         }
                     });
+
+                  dialog.show();
 
                 }
             });
